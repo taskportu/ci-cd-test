@@ -1,5 +1,5 @@
-<?php echo "hello ci cd test"; ?>
+<?php echo "CI/CD TEST"; ?>
 
-<?php echo "hello ci cd test"; ?>
+<?php echo "CI/CD TEST"; ?>
 
-<?php echo "hello ci cd test"; ?>
+<?php echo "CI/CD TEST"; ?>
