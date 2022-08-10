@@ -20,7 +20,7 @@
 <body>
     <section>
         <div class="container">
-            <h1 style="text-align:center;" class="text-danger">HELLO DIGIFRONT</h1>
+            <h1 style="text-align:center;" class="text-success">HELLO DIGIFRONT</h1>
         </div>
     </section>
 </body>
