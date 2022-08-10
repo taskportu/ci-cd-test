@@ -18,10 +18,11 @@
 </head>
 
 <body>
-    <h1 style="text-align:center;">HELLO DIGIFRONT</h1>
-    <p class="container">
-        fds ajhfbmn s,nfb kskhhbm jhfb jshgfjshbsjh jshgsyfgshfgsj hsgjfg sdjhfgsj hgsj hs gjsgj sg jsg jhhg sg sdjhfgsj fgsjgfsjgfsj dgfjsd gfjsdfgjsddg iu gfjasgf skdgfjsfjs.
-    </p>
+    <section>
+        <div class="container">
+            <h1 style="text-align:center;" class="text-danger">HELLO DIGIFRONT</h1>
+        </div>
+    </section>
 </body>
 
 </html>
