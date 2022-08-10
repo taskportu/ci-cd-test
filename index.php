@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <?= "wooow" ?>
     <h1>HELLO DIGIFRONT</h1>
     <h1>HELLO DIGIFRONT</h1>
     <h1>HELLO DIGIFRONT</h1>
