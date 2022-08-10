@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?= "wooow" ?>
+    <?= "<h1><b><i><u>wooow</u></i></b></h1>" ?>
     <h1>HELLO DIGIFRONT</h1>
     <h1>HELLO DIGIFRONT</h1>
     <h1>HELLO DIGIFRONT</h1>
