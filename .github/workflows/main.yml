@@ -19,4 +19,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
 
     - name: Install Composer dependencies
-      run: composer install
+      run: composer update
