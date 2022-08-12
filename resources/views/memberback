@@ -1,0 +1,97 @@
+@extends('layout')
+@section('home')
+@include('menu')
+<div class="container">
+	 <div class="row mt-3 text-left">
+            <div class="card-body ">
+            	<form method="POST" action="{{ url('add_memberdata') }}" data-submint >
+                        @csrf
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label
+                             text-md-right">Member FistName</label>
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control"
+                                 name="MemberFistName" required >
+                             </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label
+                             text-md-right">Member LastName</label>
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control"
+                                 name="MemberLastName" required >
+                             </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label
+                             text-md-right">OccID</label>
+                            <div class="col-md-6">
+                                <input id="OccID" type="text" class="form-control"
+                                 name="OccID" required >
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <label for="HCP" class="col-md-4 col-form-label 
+                            text-md-right">HCP</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="text" class="form-control" 
+                                name="HCP" required >
+                            </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                   Add
+                                </button>
+                            </div>
+                        </div>
+                         <div class="form-group row mb-2">
+                           @if(Session::has('success'))
+                            <div class="alert alert-success col-md-4 offset-md-5 text-center">
+                                <strong>Saved!</strong> 
+                            </div>
+                           @endif 
+                           </div> 
+                           
+                          @if(Session::has('error'))
+                          <div class="form-group row mb-2">
+                            <div class="alert alert-danger col-md-10 form-group row">
+                                <strong>OccID All ready Insert</strong> 
+                            </div>
+                           </div> 
+                           @endif
+                   </form>  
+                       
+            </div>
+      </div>
+ </div>           
+
+<!--<div class="container">
+	<div class="row mt-3 text-left">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              
+                  
+                  <th scope="col">MemberName</th>
+                  <th scope="col">OccID</th>
+                  <th scope="col">HCP</th>
+                  <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+          @foreach( $membername as $data)
+            <tr>
+                  <td>{{$data->MemberName}}</td>
+                  <td>{{$data->OccID}}</td>
+                  <td>{{$data->HCP}}</td>
+                  <td><button type="button" class="btn btn-danger">Delete</button></td>
+            </tr>
+          @endforeach 
+          </tbody>
+        </table>
+   </div> 
+</div>-->
+@endsection
